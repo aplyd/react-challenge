@@ -1,8 +1,8 @@
-import { OmdbResponse } from '../types/omdbResponse';
+import { OmdbResponse, SearchResult } from '../types/omdbResponse';
 import { flattenResults } from '../util/flattenResults';
 
 const api = {
-  async getBallotData() {
+  async getBallotData(): Promise<SearchResult[] | undefined> {
     try {
       const res = await Promise.all([
         fetch(
