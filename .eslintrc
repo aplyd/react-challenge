@@ -27,5 +27,13 @@
   "rules": {
     "linebreak-style": "off",
     "prettier/prettier": ["error"]
-  }
+  },
+  "overrides": [
+    {
+      "files": ["*.js"],
+      "rules": {
+        "@typescript-eslint/explicit-module-boundary-types": "off"
+      }
+    }
+  ]
 }
