@@ -1,4 +1,5 @@
 import { FC } from 'react';
+import styles from '../../styles/Ballot.module.css';
 import { CategorizedBallotData } from '../../types/ballotData';
 import Category from '../Category/Category';
 
@@ -8,7 +9,7 @@ interface BallotProps {
 
 const Ballot: FC<BallotProps> = ({ ballot }) => {
   return (
-    <div className="ballot-container">
+    <div className={styles.ballot}>
       {ballot.length > 0 &&
         ballot.map((category) => (
           <Category
