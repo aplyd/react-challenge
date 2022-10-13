@@ -12,6 +12,7 @@
 .category {
   composes: title;
   background-color: var(--background-secondary);
+  margin: 24px 0;
 }
 
 .nominee {
