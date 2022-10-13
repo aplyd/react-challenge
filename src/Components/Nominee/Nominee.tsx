@@ -1,4 +1,5 @@
-import { FC } from 'react';
+import { FC, useContext } from 'react';
+import { SelectionContext } from '../../contexts/selectionContext';
 import styles from '../../styles/Nominee.module.css';
 import Button from '../general/Button/Button';
 import Title from '../general/Title/Title';
@@ -6,18 +7,13 @@ import Title from '../general/Title/Title';
 interface NomineeProps {
   title: string;
   imageUrl: string;
+  category: string;
 }
 
-declare module 'react' {
-  interface HTMLAttributes<T> extends AriaAttributes, DOMAttributes<T> {
-    alt?: string;
-    className?: string;
-  }
-}
+const Nominee: FC<NomineeProps> = ({ title, imageUrl, category }) => {
+  const selectionContext = useContext(SelectionContext);
 
-const Nominee: FC<NomineeProps> = ({ title, imageUrl }) => {
   const showImage = imageUrl !== 'N/A';
-
   return (
     <div className={styles.nominee}>
       <Title className="nominee" headingLevel={3} text={title} />
@@ -29,7 +25,11 @@ const Nominee: FC<NomineeProps> = ({ title, imageUrl }) => {
           style={{ backgroundImage: `url(${imageUrl})` }}
         />
       )}
-      <Button className="nominee" text="Select Nominee" />
+      <Button
+        className="nominee"
+        onClick={() => selectionContext?.chooseSelection(category, title)}
+        text="Select Nominee"
+      />
     </div>
   );
 };
