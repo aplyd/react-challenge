@@ -1,3 +1,13 @@
-.category {
-  outline: solid 1px white;
+.nominee-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 12px;
+}
+
+@media (min-width: 996px) {
+  .nominee-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-gap: 24px;
+  }
 }

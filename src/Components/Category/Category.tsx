@@ -13,9 +13,11 @@ const Category: FC<CategoryProps> = ({ category, nominees }) => {
   return (
     <section className={styles.category}>
       <Title className="category" headingLevel={2} text={category} />
-      {nominees.map((n) => (
-        <Nominee imageUrl={n.Poster} key={n.imdbID} title={n.Title} />
-      ))}
+      <div className={styles['nominee-container']}>
+        {nominees.map((n) => (
+          <Nominee imageUrl={n.Poster} key={n.imdbID} title={n.Title} />
+        ))}
+      </div>
     </section>
   );
 };
