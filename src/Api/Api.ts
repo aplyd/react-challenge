@@ -9,12 +9,14 @@ const api = {
     try {
       const res = await Promise.all([
         fetch(
-          `http://www.omdbapi.com/?s=california&page=${1}&apikey=${apiKey}`
+          `https://www.omdbapi.com/?s=california&page=${1}&apikey=${apiKey}`
         ),
         fetch(
-          `http://www.omdbapi.com/?s=california&page=${2}&apikey=${apiKey}`
+          `https://www.omdbapi.com/?s=california&page=${2}&apikey=${apiKey}`
         ),
-        fetch(`http://www.omdbapi.com/?s=california&page=${3}&apikey=${apiKey}`)
+        fetch(
+          `https://www.omdbapi.com/?s=california&page=${3}&apikey=${apiKey}`
+        )
       ]);
 
       const data: OmdbResponse[] = await Promise.all(res.map((r) => r.json()));
