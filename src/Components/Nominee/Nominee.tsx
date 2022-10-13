@@ -9,10 +9,12 @@ interface NomineeProps {
 }
 
 const Nominee: FC<NomineeProps> = ({ title, imageUrl }) => {
+  const showImage = imageUrl !== 'N/A';
+
   return (
     <div className="nominee">
-      <Title text={title} />
-      <Image imageUrl={imageUrl} />
+      <Title headingLevel={3} text={title} />
+      {showImage && <Image imageUrl={imageUrl} />}
       <Button className="select-nominee" text="Select Nominee" />
     </div>
   );
