@@ -12,12 +12,19 @@ const App: FC = () => {
   const [ballot, setBallot] = useState<CategorizedBallotData[] | []>([]);
 
   useEffect(() => {
+    let shouldUpdate = true;
+
     (async () => {
-      const data = await api.getBallotData();
-      if (data) {
-        const ballotData = categorizeBallotData(data);
-        setBallot(ballotData);
-      }
+      await api.getBallotData().then((data) => {
+        if (data && shouldUpdate) {
+          const ballotData = categorizeBallotData(data);
+          setBallot(ballotData);
+        }
+      });
+
+      return () => {
+        shouldUpdate = false;
+      };
     })();
   }, []);
 
