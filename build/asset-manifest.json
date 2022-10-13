@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e7c0e9a2.chunk.css",
+    "main.js": "/static/js/main.82eb4d48.chunk.js",
+    "main.js.map": "/static/js/main.82eb4d48.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.1a8beaf1.js",
+    "runtime-main.js.map": "/static/js/runtime-main.1a8beaf1.js.map",
+    "static/js/2.f300e4b3.chunk.js": "/static/js/2.f300e4b3.chunk.js",
+    "static/js/2.f300e4b3.chunk.js.map": "/static/js/2.f300e4b3.chunk.js.map",
+    "static/js/3.19ef969e.chunk.js": "/static/js/3.19ef969e.chunk.js",
+    "static/js/3.19ef969e.chunk.js.map": "/static/js/3.19ef969e.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.e7c0e9a2.chunk.css.map": "/static/css/main.e7c0e9a2.chunk.css.map",
+    "static/js/2.f300e4b3.chunk.js.LICENSE.txt": "/static/js/2.f300e4b3.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/Bebas-Regular.90dabffd.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1a8beaf1.js",
+    "static/js/2.f300e4b3.chunk.js",
+    "static/css/main.e7c0e9a2.chunk.css",
+    "static/js/main.82eb4d48.chunk.js"
+  ]
+}
