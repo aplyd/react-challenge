@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/react-challenge/static/css/main.96f3bdac.chunk.css",
+    "main.js": "/react-challenge/static/js/main.070b4481.chunk.js",
+    "main.js.map": "/react-challenge/static/js/main.070b4481.chunk.js.map",
+    "runtime-main.js": "/react-challenge/static/js/runtime-main.827f83a6.js",
+    "runtime-main.js.map": "/react-challenge/static/js/runtime-main.827f83a6.js.map",
+    "static/js/2.f300e4b3.chunk.js": "/react-challenge/static/js/2.f300e4b3.chunk.js",
+    "static/js/2.f300e4b3.chunk.js.map": "/react-challenge/static/js/2.f300e4b3.chunk.js.map",
+    "static/js/3.19ef969e.chunk.js": "/react-challenge/static/js/3.19ef969e.chunk.js",
+    "static/js/3.19ef969e.chunk.js.map": "/react-challenge/static/js/3.19ef969e.chunk.js.map",
+    "index.html": "/react-challenge/index.html",
+    "static/css/main.96f3bdac.chunk.css.map": "/react-challenge/static/css/main.96f3bdac.chunk.css.map",
+    "static/js/2.f300e4b3.chunk.js.LICENSE.txt": "/react-challenge/static/js/2.f300e4b3.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/react-challenge/static/media/Bebas-Regular.90dabffd.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.827f83a6.js",
+    "static/js/2.f300e4b3.chunk.js",
+    "static/css/main.96f3bdac.chunk.css",
+    "static/js/main.070b4481.chunk.js"
+  ]
+}
