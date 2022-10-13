@@ -1,6 +1,12 @@
 .title {
   text-align: center;
   padding: 12px;
+  border-radius: var(--border-large);
+}
+
+.category {
+  composes: title;
+  background-color: var(--background-secondary);
 }
 
 @media (min-width: 996px) {
