@@ -1,0 +1,14 @@
+:root {
+  --background: #0d2436;
+  --background-secondary: #009b86;
+  --background-hover: #009b86;
+  --font: #ffffff;
+  --font-hover: #ffffff;
+  --selected: #009b86;
+}
+
+html,
+body {
+  background-color: var(--background);
+  color: var(--font);
+}
