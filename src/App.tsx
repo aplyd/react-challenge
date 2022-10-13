@@ -23,7 +23,7 @@ const App: FC = () => {
 
   return (
     <div className={styles.app}>
-      <Title headingLevel={1} text="Awards 2022" />
+      <Title className="app" headingLevel={1} text="Awards 2022" />
       <Ballot ballot={ballot} />
     </div>
   );

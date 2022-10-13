@@ -4,9 +4,18 @@
   border-radius: var(--border-large);
 }
 
+.app {
+  composes: title;
+  padding: 24px;
+}
+
 .category {
   composes: title;
   background-color: var(--background-secondary);
+}
+
+.nominee {
+  composes: title;
 }
 
 @media (min-width: 996px) {
