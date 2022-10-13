@@ -8,14 +8,28 @@ interface NomineeProps {
   imageUrl: string;
 }
 
+declare module 'react' {
+  interface HTMLAttributes<T> extends AriaAttributes, DOMAttributes<T> {
+    alt?: string;
+    className?: string;
+  }
+}
+
 const Nominee: FC<NomineeProps> = ({ title, imageUrl }) => {
   const showImage = imageUrl !== 'N/A';
 
   return (
     <div className={styles.nominee}>
       <Title className="nominee" headingLevel={3} text={title} />
-      {showImage && <img alt={`${title} movie poster`} src={imageUrl} />}
-      <Button className="select-nominee" text="Select Nominee" />
+      {showImage && (
+        <div
+          alt={`${title} movie poster`}
+          className={styles.poster}
+          role="img"
+          style={{ backgroundImage: `url(${imageUrl})` }}
+        />
+      )}
+      <Button className="nominee" text="Select Nominee" />
     </div>
   );
 };
