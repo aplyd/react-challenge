@@ -1,9 +1,9 @@
 import { FC, useEffect, useState } from 'react';
+import api from './Api/Api';
 import Ballot from './Components/Ballot/Ballot';
 import './App.css';
-import api from './Api/Api';
-import { categorizeBallotData } from './util/categorizeBallot';
 import { CategorizedBallotData } from './types/ballotData';
+import { categorizeBallotData } from './util/categorizeBallot';
 
 const App: FC = () => {
   const [ballot, setBallot] = useState<CategorizedBallotData[] | []>([]);

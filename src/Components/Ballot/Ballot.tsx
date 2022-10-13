@@ -13,8 +13,8 @@ const Ballot: FC<BallotProps> = ({ ballot }) => {
         ballot.map((category) => (
           <Category
             category={category.category}
-            nominees={category.items}
             key={category.id + category.category}
+            nominees={category.items}
           />
         ))}
     </div>

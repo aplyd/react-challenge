@@ -27,6 +27,8 @@ const api = {
     } catch {
       alert('ballot data failed to load, please reload the page');
     }
+
+    return undefined;
   }
 };
 

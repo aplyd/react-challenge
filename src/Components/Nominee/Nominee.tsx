@@ -13,7 +13,7 @@ const Nominee: FC<NomineeProps> = ({ title, imageUrl }) => {
     <div className="nominee">
       <Title text={title} />
       <Image imageUrl={imageUrl} />
-      <Button text="Select Nominee" className="select-nominee" />
+      <Button className="select-nominee" text="Select Nominee" />
     </div>
   );
 };

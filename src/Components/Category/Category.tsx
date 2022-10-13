@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import { SearchResult } from '../../types/omdbResponse';
-import Title from '../general/Title/Title';
 import Nominee from '../Nominee/Nominee';
+import Title from '../general/Title/Title';
 
 interface CategoryProps {
   category: string;
@@ -13,7 +13,7 @@ const Category: FC<CategoryProps> = ({ category, nominees }) => {
     <section className="category">
       <Title text={category} />
       {nominees.map((n) => (
-        <Nominee title={n.Title} imageUrl={n.Poster} key={n.imdbID} />
+        <Nominee imageUrl={n.Poster} key={n.imdbID} title={n.Title} />
       ))}
     </section>
   );
