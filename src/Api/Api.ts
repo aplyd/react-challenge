@@ -25,6 +25,7 @@ const api = {
       const data: OmdbResponse[] = await Promise.all(res.map((r) => r.json()));
       return flattenResults(data);
     } catch {
+      // eslint-disable-next-line
       alert('ballot data failed to load, please reload the page');
     }
 
