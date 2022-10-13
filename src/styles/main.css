@@ -5,6 +5,8 @@
   --font: #ffffff;
   --font-hover: #ffffff;
   --selected: #009b86;
+  --border-small: 4px;
+  --border-large: 12px;
 }
 
 html,
