@@ -11,7 +11,7 @@ interface CategoryProps {
 const Category: FC<CategoryProps> = ({ category, nominees }) => {
   return (
     <section className="category">
-      <Title text={category} />
+      <Title headingLevel={2} text={category} />
       {nominees.map((n) => (
         <Nominee imageUrl={n.Poster} key={n.imdbID} title={n.Title} />
       ))}
