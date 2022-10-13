@@ -1,0 +1,10 @@
+.title {
+  text-align: center;
+  padding: 12px;
+}
+
+@media (min-width: 996px) {
+  .title {
+    padding: 24px;
+  }
+}
