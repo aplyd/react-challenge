@@ -20,7 +20,7 @@ const App: FC = () => {
 
   return (
     <div className="App">
-      <Ballot />
+      <Ballot ballot={ballot} />
     </div>
   );
 };
