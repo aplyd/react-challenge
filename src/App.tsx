@@ -6,9 +6,7 @@ import { categorizeBallotData } from './util/categorizeBallot';
 import { CategorizedBallotData } from './types/ballotData';
 
 const App: FC = () => {
-  const [ballot, setBallot] = useState<CategorizedBallotData[] | undefined>(
-    undefined
-  );
+  const [ballot, setBallot] = useState<CategorizedBallotData[] | []>([]);
 
   useEffect(() => {
     (async () => {
