@@ -6,17 +6,17 @@ const api = {
     try {
       const res = await Promise.all([
         fetch(
-          `http://www.omdbapi.com/?s=null&page=${1}&apikey=${
+          `http://www.omdbapi.com/?s=california&page=${1}&apikey=${
             process.env.REACT_APP_OMDB_API_KEY
           }`
         ),
         fetch(
-          `http://www.omdbapi.com/?s=null&page=${2}&apikey=${
+          `http://www.omdbapi.com/?s=california&page=${2}&apikey=${
             process.env.REACT_APP_OMDB_API_KEY
           }`
         ),
         fetch(
-          `http://www.omdbapi.com/?s=null&page=${3}&apikey=${
+          `http://www.omdbapi.com/?s=california&page=${3}&apikey=${
             process.env.REACT_APP_OMDB_API_KEY
           }`
         )
