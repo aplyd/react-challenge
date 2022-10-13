@@ -4,7 +4,6 @@
   flex-direction: column;
   justify-content: center;
   background-color: var(--background-secondary);
-  margin: 24px 0;
   padding: 24px;
   border-radius: var(--border-large);
 }
