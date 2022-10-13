@@ -1,3 +1,4 @@
+import cx from 'classnames';
 import { FC, useContext } from 'react';
 import { SelectionContext } from '../../contexts/selectionContext';
 import styles from '../../styles/Nominee.module.css';
@@ -8,14 +9,15 @@ interface NomineeProps {
   title: string;
   imageUrl: string;
   category: string;
+  selected: boolean;
 }
 
-const Nominee: FC<NomineeProps> = ({ title, imageUrl, category }) => {
+const Nominee: FC<NomineeProps> = ({ title, imageUrl, category, selected }) => {
   const selectionContext = useContext(SelectionContext);
 
   const showImage = imageUrl !== 'N/A';
   return (
-    <div className={styles.nominee}>
+    <div className={cx(styles.nominee, { [styles.selected]: selected })}>
       <Title className="nominee" headingLevel={3} text={title} />
       {showImage && (
         <div

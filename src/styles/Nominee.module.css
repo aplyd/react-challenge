@@ -4,6 +4,7 @@
   flex-direction: column;
   justify-content: center;
   background-color: var(--background-secondary);
+  border: solid 4px var(--background-secondary);
   padding: 24px;
   border-radius: var(--border-large);
 }
@@ -19,4 +20,8 @@
   border-radius: 50%;
   background-size: 100% auto;
   background-position: center center;
+}
+
+.selected {
+  border: solid 4px var(--font);
 }
