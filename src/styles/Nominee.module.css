@@ -8,6 +8,10 @@
   border-radius: var(--border-large);
 }
 
+.nominee:hover {
+  background-color: var(--background-hover);
+}
+
 .poster {
   width: 40%;
   padding-top: 40%;
